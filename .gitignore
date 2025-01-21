@@ -1,0 +1,16 @@
+# Ignorer les fichiers et dossiers sensibles
+.env
+secrets.json
+config/settings.py
+QueDitLaScience.ipynb
+
+# Ignorer les fichiers compilés
+__pycache__/
+*.pyc
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les environnements virtuels
+venv/
+.venv/
