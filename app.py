@@ -77,19 +77,19 @@ if __name__ == "__main__":
     # Créer une instance de l'application
     app = QueDitLaScienceApp(openai_api_key=openai_api_key, google_api_key=google_api_key)
 
-    # Initialisation de Streamlit
-    st.set_page_config(page_title="Que dit la science ? ", layout="wide")
+    # # Initialisation de Streamlit
+    # st.set_page_config(page_title="Que dit la science ? ", layout="wide")
     
-    # Navigation entre les pages
-    if 'question' not in st.session_state:
-        main_page()
-    else:
-        results_page()
+    # # Navigation entre les pages
+    # if 'question' not in st.session_state:
+    #     main_page()
+    # else:
+    #     results_page()
         
-    # scientific_results, web_results, similarity_scores = app.run(
-    #     task="Describe precisely in 3 points",
-    #     question="Quelles sont les causes du changement climatique ?",
-    #     output_format="in 3 sentences of 250 characters maximum"
-    # )
+    scientific_results, web_results, similarity_scores = app.run(
+        task="Describe precisely in 3 points",
+        question="Quelles sont les causes du changement climatique ?",
+        output_format="in 3 sentences of 250 characters maximum"
+    )
     
-    # print("Fini! ")      
+    print("Fini! ")      
