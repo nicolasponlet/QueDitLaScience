@@ -46,7 +46,7 @@ def results_page():
         st.write(line + "\n" for line in web_results)
  
    # Calcul de la similarité
-    st.header("Indicateur de Similitude")
+    st.header("Indicateur de Similarité")
  
     # Afficher la similarité
     st.metric(label="Score de Similarité", value=f"{similarity_scores*100:.2f}")
